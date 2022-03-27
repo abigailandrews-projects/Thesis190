@@ -10,27 +10,25 @@ const Title = () => (
       layers={[
         {
           image: intro,
-          speed: -20,
+          translateY: [0, 50],
+          shouldAlwaysCompleteAnimation: true,
+          expanded: false,
         },
         {
           image: intro2,
-          speed: -10,
+          translateY: [0, -1],
+          shouldAlwaysCompleteAnimation: true,
+          expanded: false,
         },
       ]}
       style={{
-        height: 700,
+        height: `715px`,
         width: `100%`,
         objectFit: `contain`,
       }}
-      className={style.banner}
     />
-    <Parallax translateY={[0, -1500]}>SCROLL</Parallax>
+    <Parallax translateY={[0, -2000]}>SCROLL</Parallax>
   </div>
 );
 
 export default Title;
-
-//  /* <img className={style.image} src={intro} alt="Intro" />
-//* <img className={style.image} src={intro2} alt="Intro" /> */
-
-// // <Parallax translateY={[0, -1500]}>SCROLL</Parallax>
