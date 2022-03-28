@@ -1,0 +1,10 @@
+@import "../../styles/colors";
+
+.root {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-around;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
