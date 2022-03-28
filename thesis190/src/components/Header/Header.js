@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./Header.module.scss";
 import { motion } from "framer-motion";
+import { Parallax } from "react-scroll-parallax";
+import shelf from "../../images/Shelf4.png";
 
 const Header = () => {
   const title = "The-Spine-Collector";
@@ -8,6 +10,12 @@ const Header = () => {
   const titleAnimated = titleArray.map((x) =>
     x === "-" ? (
       <div className={style.titleSpace}> </div>
+    ) : x === "l" ? (
+      <Parallax translateY={[0, 483]} startScroll={800} endScroll={950}>
+        <motion.div whileHover={{ rotateY: 90 }} className={style.title}>
+          {x}
+        </motion.div>
+      </Parallax>
     ) : (
       <motion.div whileHover={{ rotateY: 90 }} className={style.title}>
         {x}
@@ -25,7 +33,9 @@ const Header = () => {
         <div className={style.authors}>
           By Reeves Wiedeman | With Lila Shapiro
         </div>
+        <div className={style.date}>Jan. 06, 2022</div>
       </div>
+      <img src={shelf} alt="shelf" />
     </div>
   );
 };

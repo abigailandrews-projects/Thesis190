@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  padding: 275px 125px 100px;
+  padding: 275px 125px 200px;
 }
 
 .titleBox {
@@ -33,14 +33,21 @@
 
 .description {
   font-family: "Martel", serif;
-  font-size: 25px;
+  font-size: 23px;
   text-align: center;
 }
 
 .authors {
   font-family: "Martel", serif;
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 100px;
   font-weight: bold;
+}
+
+.date {
+  font-family: "Martel", serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
 }
