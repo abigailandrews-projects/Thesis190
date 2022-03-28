@@ -27,7 +27,9 @@ const Title = () => (
         objectFit: `contain`,
       }}
     />
-    <Parallax translateY={[0, -2000]}>SCROLL</Parallax>
+    <Parallax translateY={[0, -2000]} className={style.text}>
+      scroll
+    </Parallax>
   </div>
 );
 
