@@ -2,7 +2,7 @@ import React from "react";
 import { Parallax } from "react-scroll-parallax";
 import style from "./IntroCopy.module.scss";
 
-const copy = "HELLO".split("");
+const copy = "ABIGAILLLLLL".split("");
 
 const IntroCopy = () => (
   <div className={style.root}>

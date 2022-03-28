@@ -1,0 +1,53 @@
+.root {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-around;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-around;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 275px 125px 200px;
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-family: "Viga", sans-serif;
+  font-size: 80px;
+}
+
+.titleSpace {
+  padding-left: 20px;
+}
+
+.description {
+  font-family: "Martel", serif;
+  font-size: 23px;
+  text-align: center;
+}
+
+.authors {
+  font-family: "Martel", serif;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+.date {
+  font-family: "Martel", serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+}
