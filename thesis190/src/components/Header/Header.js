@@ -35,7 +35,9 @@ const Header = () => {
         </div>
         <div className={style.date}>Jan. 06, 2022</div>
       </div>
-      <img src={shelf} alt="shelf" />
+      <div className={style.shelf}>
+        <img src={shelf} alt="shelf" />
+      </div>
     </div>
   );
 };

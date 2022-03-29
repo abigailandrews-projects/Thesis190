@@ -12,7 +12,12 @@ export default class Article extends Component {
       <div className={style.root}>
         <Title />
         <Header />
-        {/* <Paragraph /> */}
+        <Paragraph />
+        <Paragraph />
+        <Paragraph />
+        <Paragraph />
+        <Paragraph />
+        <Paragraph />
         <IntroCopy />
         <IntroCopy />
         <IntroCopy />
