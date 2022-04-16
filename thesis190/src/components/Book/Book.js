@@ -8,8 +8,8 @@ export const Book = (i) => {
     clicked: {
       position: "sticky",
       top: "400px",
-      x: `${-200 + i.i * 25}px`,
-      y: `-35px`,
+      x: `${-285 + i.i * 25}px`,
+      y: `-72px`,
     },
     notclicked: {},
   };
@@ -24,9 +24,7 @@ export const Book = (i) => {
           setIsClicked((isClicked) => !isClicked);
         }}
         className={style.container}
-      >
-        Book
-      </div>
+      ></div>
     </motion.div>
   );
 };
