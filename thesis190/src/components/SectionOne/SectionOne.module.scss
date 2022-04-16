@@ -1,8 +1,19 @@
+@import "../../styles/colors";
+
 .container {
   font-family: "Martel", serif;
   font-size: 17px;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   padding: 50px 70px 50px;
-  border: red solid;
+  margin-top: 60px;
+  border: white 0.25px solid;
+}
+
+.shadow {
+  text-shadow: 2px 2px 5px white;
+}
+
+.italic {
+  font-style: italic;
 }
