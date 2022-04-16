@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import style from "./Book.module.scss";
 
 export const Book = (i) => {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(true);
   const variants = {
     clicked: {
       position: "sticky",
@@ -24,7 +24,9 @@ export const Book = (i) => {
           setIsClicked((isClicked) => !isClicked);
         }}
         className={style.container}
-      ></div>
+      >
+        {i.i}
+      </div>
     </motion.div>
   );
 };

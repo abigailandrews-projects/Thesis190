@@ -5,6 +5,10 @@ import SectionTwo from "../SectionTwo/SectionTwo.js";
 import SectionThree from "../SectionThree/SectionThree.js";
 import SectionFour from "../SectionFour/SectionFour.js";
 import SectionFive from "../SectionFive/SectionFive.js";
+import SectionSix from "../SectionSix/SectionSix.js";
+import SectionSeven from "../SectionSeven/SectionSeven.js";
+import SectionEight from "../SectionEight/SectionEight.js";
+import SectionNine from "../SectionNine/SectionNine.js";
 import Book from "../Book/Book.js";
 
 const Body = () => (
@@ -21,14 +25,13 @@ const Body = () => (
       <Book i={4} />
       <SectionFive />
       <Book i={5} />
-      {/* TODO  */}
-      <SectionOne />
+      <SectionSix />
       <Book i={6} />
-      <SectionOne />
+      <SectionSeven />
       <Book i={7} />
-      <SectionOne />
+      <SectionEight />
       <Book i={8} />
-      <SectionOne />
+      <SectionNine />
       <Book i={9} />
     </div>
   </div>
