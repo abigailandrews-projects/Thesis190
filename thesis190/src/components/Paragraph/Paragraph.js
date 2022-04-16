@@ -3,7 +3,7 @@ import style from "./Paragraph.module.scss";
 
 const Paragraph = () => (
   <div className={style.root}>
-    <div className={style.text}>
+    <div className={style.container}>
       On the morning of March 1, 2017, Catherine Mörk and Linda Altrov Berg were
       in the offices of Norstedts, a book publisher in Sweden, when they
       received an unusual email. A colleague in Venice was asking for a
