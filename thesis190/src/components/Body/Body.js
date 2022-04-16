@@ -5,16 +5,16 @@ import Book from "../Book/Book.js";
 
 const Body = () => (
   <div className={style.root}>
-    <div className={style.shelf}>Hi</div>
+    <div className={style.shelf} />
     <div className={style.text}>
       <SectionOne />
-      <Book />
+      <Book i={1} />
       <SectionOne />
-      <Book />
+      <Book i={2} />
       <SectionOne />
-      <Book />
+      <Book i={3} />
       <SectionOne />
-      <Book />
+      <Book i={4} />
     </div>
   </div>
 );

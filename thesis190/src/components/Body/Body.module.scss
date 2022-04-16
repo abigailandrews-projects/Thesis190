@@ -1,32 +1,20 @@
-// .root {
-//   display: flex;
-//   flex-flow: column wrap;
-//   align-items: space-around;
-//   justify-content: center;
-//   align-items: center;
-//   height: auto;
-//   padding: 250px 100px 100px;
-// }
+@import "../../styles/colors";
 
 .root {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
-  // justify-content: center;
-  // align-items: center;
   height: auto;
-  padding: 250px 100px 100px;
+  padding: 250px 100px 0px 100px;
 }
 
 .shelf {
-  // position: fixed;
-  // top: 500px;
-  // left: 0;
-  width: 300px;
-  border: 3px solid #73ad21;
+  border: 1px solid $grey;
+  background-color: $grey;
   position: sticky;
-  top: 200px;
+  top: 400px;
   left: 0;
+  padding: 2px 100px 2px;
 }
 
 .text {
