@@ -1,0 +1,16 @@
+@import "../../styles/colors";
+
+.container {
+  display: block;
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  z-index: 9999;
+  width: 50%;
+  height: 50%;
+  padding-top: 100px;
+  background-color: $red;
+  -webkit-transition: 0.5s;
+  overflow: auto;
+  transition: all 0.3s linear;
+}
