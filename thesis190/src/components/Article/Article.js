@@ -13,6 +13,7 @@ export default class Article extends Component {
         <Title />
         <Header />
         <Body />
+        <Title />
         <IntroCopy />
       </div>
     );
