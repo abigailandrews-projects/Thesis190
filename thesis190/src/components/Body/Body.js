@@ -12,6 +12,7 @@ import SectionNine from "../SectionNine/SectionNine.js";
 import Book from "../Book/Book.js";
 import Modal from "../Modal/Modal.js";
 import ModalOne from "../ModalOne/ModalOne.js";
+import ModalTwo from "../ModalTwo/ModalTwo.js";
 import Title from "../Title/Title.js";
 
 const Body = () => {
@@ -93,7 +94,7 @@ const Body = () => {
           passedModal={passedModal2}
         />
         {isOpenModal2 && (
-          <Modal
+          <ModalTwo
             passedModal={passedModal2}
             setPassedModal={setPassedModal2}
             updateOpenModal={updateOpenModal2}

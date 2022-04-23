@@ -20,8 +20,7 @@ const AddressForm = (props) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Name:
-          <input type="text" value={formData} onChange={handleChange} name="name" />
+        <input type="text" value={formData} onChange={handleChange} />
       </label>
     </form>
   )
@@ -35,17 +34,34 @@ export const ModalOne = (props) => {
   return (
     <>
       <div className={style.container}>
-        <div className={style.from}>Francesca Varotto</div>
-        <div className={style.from}>@marsilioeditori.it</div>
-        <div className={style.from}>Dear Linda and Catherine, I hope you are well. Could you please re-send me the link to the manuscript of The Man Who Chased His Shadow? Thank you! Best, Francesca</div>
-        {props.passedModal ?
+        <div className={style.box}>
+          <div className={style.from}>Francesca Varotto
+            <br /> Re: Lagercrantz Manuscript
+          </div>
+          <div className={style.email}>Dear Linda and Catherine,</div>
+          <div className={style.email}>I hope you are well. Could you please re-send me the link to the manuscript of The Man Who Chased His Shadow? Thanks! </div>
+          <div className={style.email}>Best,</div>
+          <div className={style.email}>Francesca{props.passedModal ?
+            <>
+              <div className={style.text}>@marsilioeditori.com</div>
+              <button onClick={handleClose}>Close</button>
+            </>
+            : <AddressForm passedModal={props.passedModal}
+              setPassedModal={props.setPassedModal}
+              updateOpenModal={props.updateOpenModal} />}</div>
+
+        </div>
+        {/* <div className={style.from}>Francesca Varotto</div>
+        <div className={style.text}>@marsilioeditori.it</div>
+        <div className={style.text}>Dear Linda and Catherine, I hope you are well. Could you please re-send me the link to the manuscript of The Man Who Chased His Shadow? Thank you! Best, Francesca</div> */}
+        {/* {props.passedModal ?
           <>
-            <div className={style.from}>passed@marsilioeditori.it</div>
+            <div className={style.text}>passed@marsilioeditori.it</div>
             <button onClick={handleClose}>Close</button>
           </>
           : <AddressForm passedModal={props.passedModal}
             setPassedModal={props.setPassedModal}
-            updateOpenModal={props.updateOpenModal} />}
+            updateOpenModal={props.updateOpenModal} />} */}
 
       </div>
     </>
