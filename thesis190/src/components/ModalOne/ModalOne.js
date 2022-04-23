@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import style from "./ModalOne.module.scss";
 
 const AddressForm = (props) => {
@@ -51,18 +50,6 @@ export const ModalOne = (props) => {
               updateOpenModal={props.updateOpenModal} />}</div>
 
         </div>
-        {/* <div className={style.from}>Francesca Varotto</div>
-        <div className={style.text}>@marsilioeditori.it</div>
-        <div className={style.text}>Dear Linda and Catherine, I hope you are well. Could you please re-send me the link to the manuscript of The Man Who Chased His Shadow? Thank you! Best, Francesca</div> */}
-        {/* {props.passedModal ?
-          <>
-            <div className={style.text}>passed@marsilioeditori.it</div>
-            <button onClick={handleClose}>Close</button>
-          </>
-          : <AddressForm passedModal={props.passedModal}
-            setPassedModal={props.setPassedModal}
-            updateOpenModal={props.updateOpenModal} />} */}
-
       </div>
     </>
   );
