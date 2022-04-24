@@ -3,7 +3,7 @@ import style from "./ModalTwo.module.scss";
 
 const RadioButton = ({ label, value, onChange }) => {
   return (
-    <label>
+    <label className={style.text}>
       <input type="radio" checked={value} onChange={onChange} />
       {label}
     </label>
@@ -11,68 +11,61 @@ const RadioButton = ({ label, value, onChange }) => {
 };
 
 const CulpritQuiz = (props) => {
-  const [culprit, setCulprit] = React.useState('dog');
+  const [culprit, setCulprit] = React.useState('russians');
 
-  const handleCatChange = () => {
-    setCulprit('cat');
+  const handleRussiansChange = () => {
+    setCulprit('russians');
   };
 
-  const handleDogChange = () => {
-    setCulprit('dog');
+  const handleHollywoodChange = () => {
+    setCulprit('hollywood');
+  };
+
+  const handleReaderChange = () => {
+    setCulprit('reader');
+  };
+
+  const handleLilaChange = () => {
+    setCulprit('lila');
+  };
+
+  const handleManChange = () => {
+    setCulprit('man');
+    props.setPassedModal(true);
+    props.updateOpenModal(false);
   };
 
   return (
-    <div>
+    <div className={style.box}>
+      <div className={style.header}>“The culprit has been identified.”</div>
       <RadioButton
-        label="Cat"
-        value={culprit === 'cat'}
-        onChange={handleCatChange}
+        label="The Russians"
+        value={culprit === 'russians'}
+        onChange={handleRussiansChange}
       />
       <RadioButton
-        label="Dog"
-        value={culprit === 'dog'}
-        onChange={handleDogChange}
+        label="A Hollywood producer desperate for early access"
+        value={culprit === 'hollywood'}
+        onChange={handleHollywoodChange}
+      />
+      <RadioButton
+        label="An impatient reader"
+        value={culprit === 'reader'}
+        onChange={handleReaderChange}
+      />
+      <RadioButton
+        label="Lila Shapiro of New York Magazine"
+        value={culprit === 'lila'}
+        onChange={handleLilaChange}
+      />
+      <RadioButton
+        label="A man working in the New York publishing scene"
+        value={culprit === 'man'}
+        onChange={handleManChange}
       />
     </div>
   );
 }
-
-// const CulpritQuiz = (props) => {
-//   const [formData, setFormData] = useState('@marsilioeditori.it');
-
-//   const handleChange = (e) => {
-//     setFormData(e.target.value);
-//     if (e.target.value === "@marsilioeditori.com") {
-//       props.setPassedModal(true);
-//       props.updateOpenModal(false);
-//     }
-//   }
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//   }
-
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       <p>“The culprit has been identified.”</p>
-//       <input type="radio" name="culprit" value="RUSSIANS" id="russians" />
-//       <label for="russians">The Russians</label>
-//       <br />
-//       <input type="radio" name="culprit" value="HOLLYWOOD" id="hollywood" />
-//       <label for="hollywood">A Hollywood producer desperate for early access</label>
-//       <br />
-//       <input type="radio" name="culprit" value="READER" id="reader" />
-//       <label for="reader">An impatient reader</label>
-//       <br />
-//       <input type="radio" name="culprit" value="LILA" id="lila" />
-//       <label for="lila">Lila Shapiro of New York Magazine</label>
-//       <br />
-//       <input type="radio" name="culprit" value="MAN" id="man" />
-//       <label for="man">A man working in the New York publishing scene</label>
-//       <br />
-//     </form>
-//   )
-// }
 
 export const ModalTwo = (props) => {
   const handleClose = () => {
