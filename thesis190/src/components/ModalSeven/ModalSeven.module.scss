@@ -1,0 +1,98 @@
+@import "../../styles/colors";
+
+.container {
+  display: block;
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  z-index: 9999;
+  width: 50%;
+  height: 50%;
+  padding: 20px 15px 40px;
+  border-radius: 5px;
+  background-color: $grey;
+}
+
+.box {
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+.envelope {
+  position: relative;
+  cursor: pointer;
+}
+
+.back {
+  position: relative;
+  width:250px;
+  height: 200px;
+  background-color: #939393;
+}
+
+.letter {
+  position: absolute;
+  background-color: #ffffff;
+  width:230px;
+  height: 180px;
+  top:10px;
+  left:10px;
+  transition: .2s;
+}
+
+.text {
+  font-family: 'Special Elite', cursive;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: $black;
+  font-size: 13px;
+}
+
+.front {
+  position: absolute;
+  border-right: 130px solid $grey;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  height:0;
+  width:0;
+  top:0;
+  left:120px;
+  z-index:3;
+}
+
+.front:before {
+  content:"";
+  position: absolute;
+  border-left: 130px solid $grey;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  height:0;
+  width:0;
+  top:-100px;
+  left:-120px;
+}
+
+.front:after {
+  content:"";
+  position: absolute;
+  border-bottom: 105px solid #5a5a5a;
+  border-left: 125px solid transparent;
+  border-right:125px solid transparent;
+  height:0;
+  width:0;
+  top:-5px;
+  left:-120px;
+}
+
+.envelope:hover .letter {
+  transform: translateY(-100px);
+  z-index:2;
+}

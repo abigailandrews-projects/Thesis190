@@ -11,6 +11,10 @@ import SectionEight from "../SectionEight/SectionEight.js";
 import SectionNine from "../SectionNine/SectionNine.js";
 import Book from "../Book/Book.js";
 import Modal from "../Modal/Modal.js";
+import ModalOne from "../ModalOne/ModalOne.js";
+import ModalTwo from "../ModalTwo/ModalTwo.js";
+import ModalSeven from "../ModalSeven/ModalSeven.js";
+import Title from "../Title/Title.js";
 
 const Body = () => {
   const [passedModal1, setPassedModal1] = useState(false);
@@ -74,12 +78,13 @@ const Body = () => {
           passedModal={passedModal1}
         />
         {isOpenModal1 && (
-          <Modal
+          <ModalOne
             passedModal={passedModal1}
             setPassedModal={setPassedModal1}
             updateOpenModal={updateOpenModal1}
           />
         )}
+        <Title />
 
         {/* SECTION TWO */}
         <SectionTwo />
@@ -90,7 +95,7 @@ const Body = () => {
           passedModal={passedModal2}
         />
         {isOpenModal2 && (
-          <Modal
+          <ModalTwo
             passedModal={passedModal2}
             setPassedModal={setPassedModal2}
             updateOpenModal={updateOpenModal2}
@@ -170,7 +175,7 @@ const Body = () => {
           passedModal={passedModal7}
         />
         {isOpenModal7 && (
-          <Modal
+          <ModalSeven
             passedModal={passedModal7}
             setPassedModal={setPassedModal7}
             updateOpenModal={updateOpenModal7}
