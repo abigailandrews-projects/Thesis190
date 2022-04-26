@@ -100,7 +100,8 @@ const Body = () => {
 
   return (
     <div className={style.root}>
-      <div className={style.shelf} />
+      <div className={style.shelf}>
+      </div>
       <div className={style.text}>
         {/* SECTION ONE */}
         <SectionOne />

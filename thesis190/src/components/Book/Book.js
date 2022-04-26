@@ -9,8 +9,8 @@ export const Book = (props) => {
     passed: {
       position: "fixed",
       top: "400px",
-      x: `${-285 + props.i * 25}px`,
-      y: `-72px`,
+      x: `${-305 + props.i * 25}px`,
+      y: `-90px`,
     },
     notpassed: {},
   };
