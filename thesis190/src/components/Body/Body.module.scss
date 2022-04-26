@@ -15,10 +15,18 @@
   top: 400px;
   left: 0;
   padding: 2px 120px 2px;
+  margin-right:5px;
 }
 
 .text {
   margin-right: 30px;
   padding-left: 30px;
+  padding-right: 30px;
+  // background-color: ;
   // border: red solid;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
 }

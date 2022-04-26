@@ -1,9 +1,13 @@
 import React from "react";
 import style from "./SectionThree.module.scss";
+import { Parallax } from "react-scroll-parallax";
 
 const SectionThree = () => (
   <>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       On the spectrum of cyberattacks, this one wasn’t very complex. There was
       no malicious software or actual hacking involved. Some of the earliest
       victims used Gmail accounts for work, which were easy and free to spoof.
@@ -15,6 +19,9 @@ const SectionThree = () => (
       unless the company was Dutch, in which case boek was Anglicized to book.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       What did seem sophisticated was the thief’s knowledge of the business. The
       culprit wrote like someone in publishing, abbreviating to “MS” for
       manuscript and “WEL” for world English-language rights, while exchanging
@@ -29,6 +36,9 @@ const SectionThree = () => (
       enough.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       What’s more, the thief seemed to have a strong grasp of the rarefied world
       of international publishing. The first emails, in the fall of 2016,
       traveled almost exclusively among the small group of people who handle the
@@ -39,6 +49,9 @@ const SectionThree = () => (
       publishers and that Mörk and Altrov Berg controlled access to it.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       Suspicion quickly fell on literary scouts, whose work involves getting
       early access to books in order to advise foreign publishers and Hollywood
       studios whether to buy the rights. “We’re the ghost in the publishing
@@ -55,6 +68,9 @@ const SectionThree = () => (
       is to say that scouts are the book world’s spies.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       If the thief were a scout using digital espionage to get books that
       couldn’t otherwise be acquired, then that narrowed the list of suspects.
       “I always joke that scouting is like 40 people on earth,” said Kelly
@@ -64,6 +80,9 @@ const SectionThree = () => (
       manuscripts,” Lucy Abrahams, a scout who lives in Tel Aviv, told me.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       The person I’d been urged to look into was also a scout. The charges
       against him were vague — bad email manners, unusually aloof among his
       peers — but a source told me they had heard that a literary agency in New
@@ -75,6 +94,9 @@ const SectionThree = () => (
       could be solved.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       Actual proof was harder to come by. No one I spoke to at the literary
       agency seemed to know anything about it. Other domains were being
       registered with enough security to protect the thief’s identity, and when
@@ -88,6 +110,9 @@ const SectionThree = () => (
     </div>
     {/* TODO H$M */}
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       But the registrations appeared to be a red herring. Domains popped up with
       no clear pattern, registered to the address for a gay men’s health clinic
       in London, an H and M in Copenhagen, a housing development in Harlem, a

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import style from "./Book.module.scss";
+import shelf from "../../images/MiniShelf.png";
 
 export const Book = (props) => {
   const variants = {
@@ -18,15 +19,22 @@ export const Book = (props) => {
 
   return (
     <>
-      <motion.div
-        animate={props.passedModal ? "passed" : "notpassed"}
-        variants={variants}
-      >
-        <div onClick={handleClick} className={style.container}>
-          {props.i}
-          {props.passedModal}
+      <div className={style.container}>
+        <div className={style.shelf}>
+          <img src={shelf} alt="shelf" className={style.shelfimg} />
+          <div className={style.bookcontainer}>
+            <motion.div
+              animate={props.passedModal ? "passed" : "notpassed"}
+              variants={variants}
+            >
+              <div onClick={handleClick} className={style.book}>
+                {props.i}
+                {props.passedModal}
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };

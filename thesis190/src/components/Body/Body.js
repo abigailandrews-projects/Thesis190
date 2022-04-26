@@ -14,7 +14,38 @@ import Modal from "../Modal/Modal.js";
 import ModalOne from "../ModalOne/ModalOne.js";
 import ModalTwo from "../ModalTwo/ModalTwo.js";
 import ModalSeven from "../ModalSeven/ModalSeven.js";
-import Title from "../Title/Title.js";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import intro from "../../images/Intro.png";
+import intro2 from "../../images/Intro2.png";
+import titlestyle from "../SectionOne/SectionOne.module.scss";
+
+const Title = () => (
+  <>
+    <Parallax speed={2} className={titlestyle.text}>
+      <ParallaxBanner
+        layers={[
+          {
+            image: intro,
+            translateY: [0, 50],
+            shouldAlwaysCompleteAnimation: true,
+            expanded: false,
+          },
+          {
+            image: intro2,
+            translateY: [0, -1],
+            shouldAlwaysCompleteAnimation: true,
+            expanded: false,
+          },
+        ]}
+        style={{
+          height: `715px`,
+          width: `100%`,
+          objectFit: `contain`,
+        }}
+      />
+    </Parallax>
+  </>
+);
 
 const Body = () => {
   const [passedModal1, setPassedModal1] = useState(false);

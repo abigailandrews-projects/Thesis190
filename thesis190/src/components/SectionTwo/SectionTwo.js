@@ -1,9 +1,13 @@
 import React from "react";
 import style from "./SectionTwo.module.scss";
+import { Parallax } from "react-scroll-parallax";
 
 const SectionTwo = () => (
   <>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       This was a setup Stieg Larsson would have admired: a clever thief adopting
       multiple aliases, targeting victims around the world, and acting with no
       clear motive. The manuscripts weren’t being pirated, as far as anyone
@@ -17,6 +21,9 @@ const SectionTwo = () => (
       pointed out this spring, “but just to show that they can do it.”
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       When I first heard about the scheme in February, four years after the
       attempted “Millennium” heist, the thief was still on the loose, exhibiting
       behavior that was even bolder and more bizarre as they chased after
@@ -34,6 +41,9 @@ const SectionTwo = () => (
       feared Lila herself might be the thief.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       And yet my contact was certain — or “like 85 percent sure” — that the
       thief was a particular person, a man who had worked in New York publishing
       for a decade. He was an outsider in the industry with a reputation for
@@ -41,6 +51,9 @@ const SectionTwo = () => (
       business almost entirely over email.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       Even more intriguing: Someone, I was told, had proof.
     </div>
   </>

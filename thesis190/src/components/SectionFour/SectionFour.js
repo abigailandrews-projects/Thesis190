@@ -1,9 +1,13 @@
 import React from "react";
 import style from "./SectionFour.module.scss";
+import { Parallax } from "react-scroll-parallax";
 
 const SectionFour = () => (
   <>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       While riding the TGV from Paris to Germany in October 2018, a scout I’ll
       call Natasha — she requested a pseudonym in order to more freely discuss
       industry spywork — sent an excited email to her clients. A few days
@@ -13,6 +17,9 @@ const SectionFour = () => (
       release.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       Scouts don’t often swap manuscripts, which amounts to giving intelligence
       to the enemy, but this was an unusual case. The foreign rights to a title
       by a big-name writer like McEwan are spoken for well in advance, which
@@ -26,9 +33,15 @@ const SectionFour = () => (
       in person. Natasha saw Southern at a dinner and thanked her for the slip.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       Southern had no idea what she was talking about.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       After a quiet summer, the thief was back with a new tactic. They didn’t
       just want the McEwan. The McEwan was bait. And if the thief were trading
       in books that were of great interest to Hollywood, the money involved
@@ -45,6 +58,9 @@ const SectionFour = () => (
       came.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       The thief did possess a tenacity more common in Hollywood than the book
       world. If a target didn’t respond, the thief would often follow up with an
       identical request several hours later. One person received nine emails
@@ -55,6 +71,9 @@ const SectionFour = () => (
       subcontracted service.”
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       By the fall of 2018, the thief had made off with dozens of books, although
       no one knew how many times people had fallen for the scam, so the total
       haul was likely much higher. A literary agent in New York didn’t realize
@@ -63,6 +82,9 @@ const SectionFour = () => (
       scout she thought was simply dying to read her books.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       Several people decided it was time to ask for outside help. A scout broke
       the news to The Bookseller, a British trade publication, and Publishers
       Weekly spoke to Ziv Lewis, who works for an Israeli publisher and said
@@ -74,6 +96,9 @@ const SectionFour = () => (
       an American novel? — meant she might be better off trying the FBI.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       To many in the industry, the case felt like one that book people, having
       sold no shortage of spy novels, could solve on their own. “There’s a bunch
       of us amateur Nancy Drews and Hardy Boys who have made our versions of the
@@ -87,6 +112,9 @@ const SectionFour = () => (
       PDF never turned up. Others tried similar gambits to no avail.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       Three years into the crime spree, an industry based on trust and
       relationships faced a growing paranoia. Agencies started
       password-protecting minor books. (“I got a 70-page Dutch novella with an
@@ -96,6 +124,9 @@ const SectionFour = () => (
       had worked with for years.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       The attacks felt personal. It was violating to men and women of letters to
       have their words appropriated — especially once authors themselves became
       targets. Many writers were vulnerable to the ruse, eager to please someone
@@ -105,6 +136,9 @@ const SectionFour = () => (
       their manuscript.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       In 2019, the thief found out that Eka Kurniawan, an Indonesian novelist
       who was nominated for the Man Booker International Prize, had a deadline
       looming and decided to impersonate his agent. “You told me the manuscript
@@ -114,6 +148,9 @@ const SectionFour = () => (
       partly responsible. “He’s been quite stuck,” she said.
     </div>
     <div className={style.container}>
+      <Parallax speed={2} className={style.text}>
+        <div className={style.dot}></div>
+      </Parallax>
       Multiple people told me they were convinced the thief was someone they
       knew pursuing a personal vendetta. But the breadth of the scheme suggested
       a grudge against the entire industry — perhaps an underling whose career

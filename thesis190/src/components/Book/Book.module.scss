@@ -1,7 +1,33 @@
+@import "../../styles/colors";
+
 .container {
+  padding-top: 50px;
+  display: flex;
+}
+
+.bookcontainer {
+  position: absolute;
+  left: 25px;
+  bottom: 15%;
+}
+
+.book {
+  z-index: 6;
+  background-color: blue;
   width: 15px;
-  padding: 50px 1px 20px;
+  padding: 40px 1px 20px;
   border: 1px solid white;
   background-color: white;
   color: black;
+}
+
+.shelf {
+  z-index: 2;
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.shelfimg {
+  max-width: 100%;
 }
