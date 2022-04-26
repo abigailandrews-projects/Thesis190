@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import style from "./Book.module.scss";
 import shelf from "../../images/MiniShelf.png";
+import bookcover from "../../images/BookCover.png";
 
 export const Book = (props) => {
   const variants = {
@@ -28,8 +29,8 @@ export const Book = (props) => {
               variants={variants}
             >
               <div onClick={handleClick} className={style.book}>
-                {props.i}
-                {props.passedModal}
+                {/* {props.i} */}
+                <img src={bookcover} alt="shelf" className={style.bookcover} />
               </div>
             </motion.div>
           </div>

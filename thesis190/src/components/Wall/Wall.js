@@ -16,7 +16,7 @@ const Wall = () => (
         },
         {
           image: intro2,
-          translateY: [20, 0],
+          translateY: [0, -1],
           shouldAlwaysCompleteAnimation: true,
           expanded: false,
         },
