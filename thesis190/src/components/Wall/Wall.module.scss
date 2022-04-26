@@ -1,0 +1,17 @@
+@import "../../styles/colors";
+
+.root {
+  display: flex; 
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.text {
+  font-family: "Martel", serif;
+  font-size: 20px;
+}
+
+.layer {
+  width: 100px;
+}

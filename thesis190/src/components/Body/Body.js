@@ -14,10 +14,12 @@ import Modal from "../Modal/Modal.js";
 import ModalOne from "../ModalOne/ModalOne.js";
 import ModalTwo from "../ModalTwo/ModalTwo.js";
 import ModalSeven from "../ModalSeven/ModalSeven.js";
+import Wall from "../Wall/Wall.js";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import intro from "../../images/Intro.png";
 import intro2 from "../../images/Intro2.png";
 import titlestyle from "../SectionOne/SectionOne.module.scss";
+
 
 const Title = () => (
   <>
@@ -115,7 +117,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal1}
           />
         )}
-        <Title />
+        <Wall />
 
         {/* SECTION TWO */}
         <SectionTwo />
