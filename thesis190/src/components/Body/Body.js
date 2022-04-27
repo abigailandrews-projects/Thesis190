@@ -135,6 +135,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal2}
           />
         )}
+        <Wall />
 
         {/* SECTION THREE */}
         <SectionThree />
@@ -151,6 +152,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal3}
           />
         )}
+        <Wall />
 
         {/* SECTION FOUR */}
         <SectionFour />
@@ -167,6 +169,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal4}
           />
         )}
+        <Wall />
 
         {/* SECTION FIVE */}
         <SectionFive />
@@ -183,6 +186,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal5}
           />
         )}
+        <Wall />
 
         {/* SECTION SIX */}
         <SectionSix />
@@ -199,6 +203,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal6}
           />
         )}
+        <Wall />
 
         {/* SECTION SEVEN */}
         <SectionSeven />
@@ -215,6 +220,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal7}
           />
         )}
+        <Wall />
 
         {/* SECTION EIGHT */}
         <SectionEight />
@@ -231,6 +237,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal8}
           />
         )}
+        <Wall />
 
         {/* SECTION NINE */}
         <SectionNine />
@@ -247,38 +254,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal9}
           />
         )}
-
-        {/* <SectionTwo />
-        <Book i={2} passedModal={passedModal2} />
-        <Modal passedModal={passedModal2} setPassedModal={setPassedModal2} />
-
-        <SectionThree />
-        <Book i={3} passedModal={passedModal3} />
-        <Modal passedModal={passedModal3} setPassedModal={setPassedModal3} />
-
-        <SectionFour />
-        <Book i={4} passedModal={passedModal4} />
-        <Modal passedModal={passedModal4} setPassedModal={setPassedModal4} />
-
-        <SectionFive />
-        <Book i={5} passedModal={passedModal5} />
-        <Modal passedModal={passedModal5} setPassedModal={setPassedModal5} />
-
-        <SectionSix />
-        <Book i={6} passedModal={passedModal6} />
-        <Modal passedModal={passedModal6} setPassedModal={setPassedModal6} />
-
-        <SectionSeven />
-        <Book i={7} passedModal={passedModal7} />
-        <Modal passedModal={passedModal7} setPassedModal={setPassedModal7} />
-
-        <SectionEight />
-        <Book i={8} passedModal={passedModal8} />
-        <Modal passedModal={passedModal8} setPassedModal={setPassedModal8} />
-
-        <SectionNine />
-        <Book i={9} passedModal={passedModal9} />
-        <Modal passedModal={passedModal9} setPassedModal={setPassedModal9} /> */}
+        <Wall />
       </div>
     </div>
   );
