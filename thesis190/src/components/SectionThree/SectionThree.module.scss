@@ -1,6 +1,8 @@
 @import "../../styles/colors";
 
 .container {
+  display: flex;
+  flex-direction: column;
   font-family: "Martel", serif;
   font-size: 17px;
   text-align: left;
@@ -8,12 +10,19 @@
   padding: 50px 70px 50px;
   margin-top: 60px;
   border: white 0.25px solid;
-}
-
-.shadow {
-  text-shadow: 2px 2px 5px white;
+  background-color: white;
+  color: $black;
 }
 
 .italic {
   font-style: italic;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: $red;
+  border-radius: 50%;
+  display: inline-block;
+  margin: -10px 47% 15px;
 }

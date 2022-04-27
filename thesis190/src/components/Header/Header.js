@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Header.module.scss";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
-import shelf from "../../images/Shelf4.png";
+import shelf from "../../images/IntroA.png";
 
 const Header = () => {
   const title = "The-Spine-Collector";
@@ -11,16 +11,16 @@ const Header = () => {
     x === "-" ? (
       <div className={style.titleSpace}> </div>
     ) : x === "l" ? (
-      <Parallax translateY={[0, 483]} startScroll={800} endScroll={950}>
+      <Parallax translateY={[0, 488]} startScroll={800} endScroll={950}>
         <motion.div whileHover={{ rotateY: 90 }} className={style.title}>
           {x}
         </motion.div>
       </Parallax>
     ) : (
-      <motion.div whileHover={{ rotateY: 90 }} className={style.title}>
-        {x}
-      </motion.div>
-    )
+          <motion.div whileHover={{ rotateY: 90 }} className={style.title}>
+            {x}
+          </motion.div>
+        )
   );
   return (
     <div className={style.root}>
@@ -35,9 +35,7 @@ const Header = () => {
         </div>
         <div className={style.date}>Jan. 06, 2022</div>
       </div>
-      <div className={style.shelf}>
-        <img src={shelf} alt="shelf" />
-      </div>
+      <img src={shelf} alt="shelf" className={style.shelf} />
     </div>
   );
 };
