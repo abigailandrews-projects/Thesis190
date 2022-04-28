@@ -16,14 +16,12 @@ export const Navigation = () => {
   const [openLearn, setOpenLearn] = useState(false);
 
   const handleLearn = () => {
-    console.log("LEARN MORE PAGE REDIRECT");
     setOpenLearn(true);
   }
   const handleOriginal = () => {
-    window.location.href = "https://www.vulture.com/2022/01/stealing-books-before-release-mystery.html";
+    window.open("https://www.vulture.com/2022/01/stealing-books-before-release-mystery.html", "_blank");
   }
   const handleAbout = () => {
-    console.log("ABOUT PAGE REDIRECT");
     setOpenAbout(true);
   }
 
