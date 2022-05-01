@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 
 // components
 import Modal from "../Modal/Modal.js";
+import AboutModal from "../AboutModal/AboutModal.js";
+import LearnModal from "../LearnModal/LearnModal.js";
 
 // style
 import style from "./Navigation.module.scss";
 
 // images
-import shelf from "../../images/IntroA.png";
+import shelf from "../../images/Outro.png";
 
 export const Navigation = () => {
   const [openAbout, setOpenAbout] = useState(false);
@@ -24,6 +26,14 @@ export const Navigation = () => {
   const handleAbout = () => {
     setOpenAbout(true);
   }
+
+  const updateOpenLearn = (bool) => {
+    setOpenLearn(bool);
+  };
+
+  const updateOpenAbout = (bool) => {
+    setOpenAbout(bool);
+  };
 
   return (
     <>
@@ -48,16 +58,12 @@ export const Navigation = () => {
           ABOUT
         </motion.button>
         {openAbout &&
-          <Modal
-            passedModal={false}
-            setPassedModal={() => { }}
-            updateOpenModal={() => { }}
+          <AboutModal
+            updateOpenModal={updateOpenAbout}
           />}
         {openLearn &&
-          <Modal
-            passedModal={false}
-            setPassedModal={() => { }}
-            updateOpenModal={() => { }}
+          <LearnModal
+            updateOpenModal={updateOpenLearn}
           />}
       </div>
     </>

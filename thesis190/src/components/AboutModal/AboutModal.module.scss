@@ -1,0 +1,35 @@
+@import "../../styles/colors";
+
+.container {
+  display: block;
+  position: fixed;
+  left: 35%;
+  top: 25%;
+  z-index: 9999;
+  width: 500px;
+  height: 515px;
+  padding: 20px 15px 40px;
+  border-radius: 5px;
+  background-color: $grey;
+}
+
+.box {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  border-radius: 5px;
+  padding: 18px 10px 5%;
+}
+
+.text {
+  font-family: "Martel", serif;
+  font-size: 13px;
+  color: $black;
+}
+
+.indent {
+  text-indent: 45px;
+}
