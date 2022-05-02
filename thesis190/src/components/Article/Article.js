@@ -36,6 +36,7 @@ const MyComponent = () => {
         <Title />
         <Header />
         <Body />
+        <Title />
         <Navigation />
       </div >
     </>
