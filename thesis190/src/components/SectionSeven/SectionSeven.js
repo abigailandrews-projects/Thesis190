@@ -17,9 +17,14 @@ const SectionSeven = () => (
       named Bettina Schrewe:
     </div>
     <div className={style.container}>
-      Dear Liz, Someone named Reeves Wiedeman contacted me to talk about the
-      publishing scammer and he said you gave him my name. Who is he? Do you
-      know him? Is he someone legit? Best, Bettina
+      <div className={style.email}>
+        Dear Liz,<br /><br />
+        Someone named Reeves Wiedeman contacted me to talk about the
+        publishing scammer and he said you gave him my name. Who is he? Do you
+        know him? Is he someone legit? <br /><br />
+        Best, <br />
+        Bettina
+    </div>
     </div>
     <div className={style.container}>
       The email wasn’t accurate. Gately hadn’t given me Schrewe’s name. How did
@@ -30,9 +35,14 @@ const SectionSeven = () => (
       reached out directly a day later:
     </div>
     <div className={style.container}>
-      Hi Reeves, We might know who the phisher is! Apparently a few days ago he
-      sent an email asking for a manuscript but he forgot to sign with the
-      agent/victim’s name and put his own … Best, Bettina
+      <div className={style.email}>
+        Hi Reeves, <br /><br />
+        We might know who the phisher is! Apparently a few days ago he
+        sent an email asking for a manuscript but he forgot to sign with the
+        agent/victim’s name and put his own …<br /><br />
+        Best,<br />
+        Bettina
+    </div>
     </div>
     <div className={style.container}>
       Even in my heightened state of alertness, I had to scrutinize the phony
@@ -61,8 +71,11 @@ const SectionSeven = () => (
       in the middle of a word, reading in full:
     </div>
     <div className={style.container}>
-      Dear Reeves, I heard you’re working on an article on the publishing
-      scammer and I w
+      <div className={style.email}>
+        Dear Reeves,<br /><br />
+        I heard you’re working on an article on the publishing
+        scammer and I w
+      </div>
     </div>
     <div className={style.container}>
       What on earth was going on? I continued to play dumb, still hoping to

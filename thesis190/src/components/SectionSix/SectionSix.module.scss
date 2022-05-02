@@ -26,3 +26,11 @@
   display: inline-block;
   margin: -10px 47% 15px;
 }
+
+.email {
+  font-family: 'Special Elite', cursive;
+  color: $black;
+  font-size: 15px;
+  padding: 10px;
+  border-left: .25px dotted $black;
+}

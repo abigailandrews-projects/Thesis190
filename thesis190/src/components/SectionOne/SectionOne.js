@@ -6,7 +6,7 @@ const SectionOne = () => {
   return (
     <>
       <div className={style.container}>
-        <Parallax speed={2} className={style.text}>
+        <Parallax speed={2}>
           <div className={style.dot}></div>
         </Parallax>
         On the morning of March 1, 2017, Catherine Mörk and Linda Altrov Berg were in the offices of Norstedts, a book publisher in Sweden, when they received an unusual email. A colleague in Venice was asking for a top-secret document: the unpublished manuscript of the forth-coming fifth book in Stieg Larsson’s “Millennium” series. The books, which follow hacker detective Lisbeth Salander, have sold more than 100 million copies. David Lagercrantz, another Swedish writer, had taken over the series after Larsson’s death, and his latest — The Man Who Chased His Shadow — was expected to be one of the publishing events of the year.
@@ -24,10 +24,12 @@ const SectionOne = () => {
         The unusual email came from Francesca Varotto, the book’s Italian-edition editor, and arrived shortly after Norstedts sent out the manuscript:
       </div >
       <div className={style.container}>
-        <Parallax speed={2} className={style.text}>
-          <div className={style.dot}></div>
+        <Parallax speed={2} className={style.email}>
+          Dear Linda and Catherine,<br /><br />
+          I hope you are well. Could you please re-send me the link to the manuscript of The Man Who Chased His Shadow? Thank you! <br /><br />
+          Best, <br />
+          Francesca
         </Parallax>
-        Dear Linda and Catherine, I hope you are well. Could you please re-send me the link to the manuscript of The Man Who Chased His Shadow? Thank you! Best, Francesca
       </div >
       <div className={style.container}>
         <Parallax speed={2} className={style.text}>
