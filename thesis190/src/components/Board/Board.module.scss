@@ -1,0 +1,16 @@
+@import "../../styles/colors";
+
+.root {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-around;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 100px;
+}
+
+.text {
+  font-family: "Martel", serif;
+  font-size: 20px;
+}

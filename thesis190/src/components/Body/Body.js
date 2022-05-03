@@ -226,7 +226,6 @@ const Body = () => {
             updateOpenModal={updateOpenModal9}
           />
         )}
-        <Wall />
       </div>
     </div>
   );
