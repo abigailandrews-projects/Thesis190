@@ -29,7 +29,6 @@ export const Book = (props) => {
               variants={variants}
             >
               <div onClick={handleClick} className={style.book}>
-                {/* {props.i} */}
                 <img src={bookcover} alt="shelf" className={style.bookcover} />
               </div>
             </motion.div>

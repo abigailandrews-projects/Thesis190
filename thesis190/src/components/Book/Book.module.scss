@@ -12,7 +12,7 @@
 }
 
 .book {
-  z-index: 6;
+  z-index: 2;
   width: 15px;
   color: black;
 }
@@ -25,7 +25,7 @@
 }
 
 .shelf {
-  z-index: 2;
+  z-index: 11;
   position: relative;
   object-fit: contain;
   max-width: 100%;

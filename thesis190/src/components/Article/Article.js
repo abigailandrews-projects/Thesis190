@@ -19,19 +19,20 @@ const useViewport = () => {
 
   // Return the width so we can use it in our components
   return { width };
-}
+};
 
 const MyComponent = () => {
   const { width } = useViewport();
   const breakpoint = 1040;
 
-  return width < breakpoint ?
+  return width < breakpoint ? (
     <div className={style.mobile}>
       <div className={style.mobiletext}>
-        Resize Window <br />(Desktop Compatible Only)
+        Resize Window <br />
+        (Desktop Compatible Only)
       </div>
     </div>
-    :
+  ) : (
     <>
       <div className={style.root}>
         <Title />
@@ -39,16 +40,13 @@ const MyComponent = () => {
         <Body />
         <Board />
         <Navigation />
-      </div >
+      </div>
     </>
-
-    ;
-}
+  );
+};
 
 export default class Article extends Component {
   render() {
-    return (
-      <MyComponent />
-    );
+    return <MyComponent />;
   }
 }

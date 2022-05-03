@@ -1,5 +1,5 @@
 // libraries
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // components
 import SectionOne from "../SectionOne/SectionOne.js";
@@ -73,18 +73,38 @@ const Body = () => {
     setIsOpenModal9(bool);
   };
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    console.log(scrollPosition);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
+
+  const validScroll = (scrollY) => {
+    return scrollY <= 46870 && scrollY >= 1630;
+  };
+
   return (
     <div className={style.root}>
       <div className={style.shelf}></div>
       <div className={style.text}>
         {/* SECTION ONE */}
         <SectionOne />
-        <Book
-          i={1}
-          isOpenModal={isOpenModal1}
-          updateOpenModal={updateOpenModal1}
-          passedModal={passedModal1}
-        />
+        {validScroll(scrollPosition) && (
+          <Book
+            i={1}
+            isOpenModal={isOpenModal1}
+            updateOpenModal={updateOpenModal1}
+            passedModal={passedModal1}
+          />
+        )}
         {isOpenModal1 && (
           <ModalOne
             passedModal={passedModal1}
@@ -96,12 +116,14 @@ const Body = () => {
 
         {/* SECTION TWO */}
         <SectionTwo />
-        <Book
-          i={2}
-          isOpenModal={isOpenModal2}
-          updateOpenModal={updateOpenModal2}
-          passedModal={passedModal2}
-        />
+        {validScroll(scrollPosition) && (
+          <Book
+            i={2}
+            isOpenModal={isOpenModal2}
+            updateOpenModal={updateOpenModal2}
+            passedModal={passedModal2}
+          />
+        )}
         {isOpenModal2 && (
           <ModalTwo
             passedModal={passedModal2}
@@ -113,12 +135,14 @@ const Body = () => {
 
         {/* SECTION THREE */}
         <SectionThree />
-        <Book
-          i={3}
-          isOpenModal={isOpenModal3}
-          updateOpenModal={updateOpenModal3}
-          passedModal={passedModal3}
-        />
+        {validScroll(scrollPosition) && (
+          <Book
+            i={3}
+            isOpenModal={isOpenModal3}
+            updateOpenModal={updateOpenModal3}
+            passedModal={passedModal3}
+          />
+        )}
         {isOpenModal3 && (
           <ModalThree
             passedModal={passedModal3}
@@ -130,12 +154,14 @@ const Body = () => {
 
         {/* SECTION FOUR */}
         <SectionFour />
-        <Book
-          i={4}
-          isOpenModal={isOpenModal4}
-          updateOpenModal={updateOpenModal4}
-          passedModal={passedModal4}
-        />
+        {validScroll(scrollPosition) && (
+          <Book
+            i={4}
+            isOpenModal={isOpenModal4}
+            updateOpenModal={updateOpenModal4}
+            passedModal={passedModal4}
+          />
+        )}
         {isOpenModal4 && (
           <ModalFour
             passedModal={passedModal4}
@@ -147,12 +173,14 @@ const Body = () => {
 
         {/* SECTION FIVE */}
         <SectionFive />
-        <Book
-          i={5}
-          isOpenModal={isOpenModal5}
-          updateOpenModal={updateOpenModal5}
-          passedModal={passedModal5}
-        />
+        {validScroll(scrollPosition) && (
+          <Book
+            i={5}
+            isOpenModal={isOpenModal5}
+            updateOpenModal={updateOpenModal5}
+            passedModal={passedModal5}
+          />
+        )}
         {isOpenModal5 && (
           <Modal
             passedModal={passedModal5}
@@ -164,12 +192,14 @@ const Body = () => {
 
         {/* SECTION SIX */}
         <SectionSix />
-        <Book
-          i={6}
-          isOpenModal={isOpenModal6}
-          updateOpenModal={updateOpenModal6}
-          passedModal={passedModal6}
-        />
+        {validScroll(scrollPosition) && (
+          <Book
+            i={6}
+            isOpenModal={isOpenModal6}
+            updateOpenModal={updateOpenModal6}
+            passedModal={passedModal6}
+          />
+        )}
         {isOpenModal6 && (
           <ModalSix
             passedModal={passedModal6}
@@ -181,12 +211,14 @@ const Body = () => {
 
         {/* SECTION SEVEN */}
         <SectionSeven />
-        <Book
-          i={7}
-          isOpenModal={isOpenModal7}
-          updateOpenModal={updateOpenModal7}
-          passedModal={passedModal7}
-        />
+        {validScroll(scrollPosition) && (
+          <Book
+            i={7}
+            isOpenModal={isOpenModal7}
+            updateOpenModal={updateOpenModal7}
+            passedModal={passedModal7}
+          />
+        )}
         {isOpenModal7 && (
           <ModalSeven
             passedModal={passedModal7}
@@ -198,12 +230,14 @@ const Body = () => {
 
         {/* SECTION EIGHT */}
         <SectionEight />
-        <Book
-          i={8}
-          isOpenModal={isOpenModal8}
-          updateOpenModal={updateOpenModal8}
-          passedModal={passedModal8}
-        />
+        {validScroll(scrollPosition) && (
+          <Book
+            i={8}
+            isOpenModal={isOpenModal8}
+            updateOpenModal={updateOpenModal8}
+            passedModal={passedModal8}
+          />
+        )}
         {isOpenModal8 && (
           <Modal
             passedModal={passedModal8}
@@ -215,12 +249,14 @@ const Body = () => {
 
         {/* SECTION NINE */}
         <SectionNine />
-        <Book
-          i={9}
-          isOpenModal={isOpenModal9}
-          updateOpenModal={updateOpenModal9}
-          passedModal={passedModal9}
-        />
+        {validScroll(scrollPosition) && (
+          <Book
+            i={9}
+            isOpenModal={isOpenModal9}
+            updateOpenModal={updateOpenModal9}
+            passedModal={passedModal9}
+          />
+        )}
         {isOpenModal9 && (
           <Modal
             passedModal={passedModal9}
