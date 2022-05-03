@@ -16,6 +16,8 @@ import Modal from "../Modal/Modal.js";
 import ModalOne from "../ModalOne/ModalOne.js";
 import ModalTwo from "../ModalTwo/ModalTwo.js";
 import ModalThree from "../ModalThree/ModalThree.js";
+import ModalFour from "../ModalFour/ModalFour.js";
+import ModalSix from "../ModalSix/ModalSix.js";
 import ModalSeven from "../ModalSeven/ModalSeven.js";
 import Wall from "../Wall/Wall.js";
 
@@ -135,7 +137,7 @@ const Body = () => {
           passedModal={passedModal4}
         />
         {isOpenModal4 && (
-          <Modal
+          <ModalFour
             passedModal={passedModal4}
             setPassedModal={setPassedModal4}
             updateOpenModal={updateOpenModal4}
@@ -169,7 +171,7 @@ const Body = () => {
           passedModal={passedModal6}
         />
         {isOpenModal6 && (
-          <Modal
+          <ModalSix
             passedModal={passedModal6}
             setPassedModal={setPassedModal6}
             updateOpenModal={updateOpenModal6}
