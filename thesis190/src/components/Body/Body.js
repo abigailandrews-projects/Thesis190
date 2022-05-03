@@ -15,6 +15,7 @@ import Book from "../Book/Book.js";
 import Modal from "../Modal/Modal.js";
 import ModalOne from "../ModalOne/ModalOne.js";
 import ModalTwo from "../ModalTwo/ModalTwo.js";
+import ModalThree from "../ModalThree/ModalThree.js";
 import ModalSeven from "../ModalSeven/ModalSeven.js";
 import Wall from "../Wall/Wall.js";
 
@@ -72,8 +73,7 @@ const Body = () => {
 
   return (
     <div className={style.root}>
-      <div className={style.shelf}>
-      </div>
+      <div className={style.shelf}></div>
       <div className={style.text}>
         {/* SECTION ONE */}
         <SectionOne />
@@ -118,7 +118,7 @@ const Body = () => {
           passedModal={passedModal3}
         />
         {isOpenModal3 && (
-          <Modal
+          <ModalThree
             passedModal={passedModal3}
             setPassedModal={setPassedModal3}
             updateOpenModal={updateOpenModal3}
