@@ -3,6 +3,8 @@ import IntroCopy from "../IntroCopy/IntroCopy.js";
 import Title from "../Title/Title.js";
 import Body from "../Body/Body.js";
 import Header from "../Header/Header.js";
+import Navigation from "../Navigation/Navigation.js";
+import Board from "../Board/Board.js";
 
 import style from "./Article.module.scss";
 
@@ -35,8 +37,8 @@ const MyComponent = () => {
         <Title />
         <Header />
         <Body />
-        <Title />
-        <IntroCopy />
+        <Board />
+        <Navigation />
       </div >
     </>
 
@@ -47,7 +49,6 @@ export default class Article extends Component {
   render() {
     return (
       <MyComponent />
-
     );
   }
 }

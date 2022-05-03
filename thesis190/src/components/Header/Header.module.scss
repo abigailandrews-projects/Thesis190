@@ -1,3 +1,5 @@
+@import "../../styles/colors";
+
 .root {
   display: flex;
   flex-flow: column wrap;
@@ -15,6 +17,7 @@
   align-items: center;
   height: auto;
   padding: 275px 125px 200px;
+  z-index: 10;
 }
 
 .titleBox {

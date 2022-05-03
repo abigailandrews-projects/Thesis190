@@ -17,11 +17,13 @@ const SectionSix = () => (
       working European mornings before taking over child-care duty in the
       afternoon. To their victims around the world, the thief expressed empathy:
     </div>
-    {/* TODO Email */}
     <div className={style.container}>
-      “I hope the situation is getting better in Norway!” “Are you in Italy now?
-      I heard things are now opening up there which is great!!” “How’s working
-      from home for you? For me it’s getting a bit stressful …”
+      <div className={style.email}>
+        “I hope the situation is getting better in Norway!”<br /><br />
+        “Are you in Italy now? I heard things are now opening up there which is great!!”<br /><br />
+        “How’s working from home for you? For me it’s getting a bit stressful …”
+    </div>
+
     </div>
 
     <div className={style.container}>
