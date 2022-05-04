@@ -38,6 +38,7 @@ const MyComponent = () => {
         <Title />
         <Header />
         <Body />
+        {/* <div className={style.bottompad} /> */}
         <Board />
         <Navigation />
       </div>
