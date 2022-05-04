@@ -22,8 +22,8 @@ const Board = () => (
         },
       ]}
       style={{
-        height: `715px`,
-        width: `100%`,
+        height: `450px`,
+        maxWidth: `100%`,
         objectFit: `contain`,
       }}
     />

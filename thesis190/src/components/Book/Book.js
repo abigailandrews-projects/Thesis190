@@ -18,6 +18,10 @@ export const Book = (props) => {
     props.updateOpenModal(true);
   };
 
+  const validScroll = (scrollY) => {
+    return scrollY >= 1630;
+  };
+
   return (
     <>
       <div className={style.container}>
@@ -28,8 +32,12 @@ export const Book = (props) => {
               animate={props.passedModal ? "passed" : "notpassed"}
               variants={variants}
             >
-              <div onClick={handleClick} className={style.book}>
-                {/* {props.i} */}
+              <div
+                onClick={handleClick}
+                className={`${style.book} ${
+                  !validScroll(props.isValidPosition) && style.opacity
+                  }`}
+              >
                 <img src={bookcover} alt="shelf" className={style.bookcover} />
               </div>
             </motion.div>

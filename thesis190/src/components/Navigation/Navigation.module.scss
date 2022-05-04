@@ -9,6 +9,7 @@
   max-width: 100%;
   height: auto;
   position: relative;
+  z-index: 9;
 }
 
 .shelf {
@@ -20,7 +21,7 @@
 
 .learn {
   position: absolute;
-  top: 20px;
+  bottom: 30%;
   left: 100px;
   padding: 40px 8px 40px;
   z-index: 6;
@@ -35,7 +36,7 @@
 
 .original {
   position: absolute;
-  top: 20px;
+  bottom: 30%;
   left: 33%;
   padding: 40px 8px 40px;
   z-index: 6;
@@ -50,7 +51,7 @@
 
 .about {
   position: absolute;
-  top: 35px;
+  bottom: 30%;
   left: 45%;
   padding: 40px 8px 40px;
   z-index: 6;

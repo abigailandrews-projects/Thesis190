@@ -4,7 +4,6 @@ import Title from "../Title/Title.js";
 import Body from "../Body/Body.js";
 import Header from "../Header/Header.js";
 import Navigation from "../Navigation/Navigation.js";
-import Board from "../Board/Board.js";
 
 import style from "./Article.module.scss";
 
@@ -19,36 +18,33 @@ const useViewport = () => {
 
   // Return the width so we can use it in our components
   return { width };
-}
+};
 
 const MyComponent = () => {
   const { width } = useViewport();
   const breakpoint = 1040;
 
-  return width < breakpoint ?
+  return width < breakpoint ? (
     <div className={style.mobile}>
       <div className={style.mobiletext}>
-        Resize Window <br />(Desktop Compatible Only)
+        Resize Window <br />
+        (Desktop Compatible Only)
       </div>
     </div>
-    :
-    <>
-      <div className={style.root}>
-        <Title />
-        <Header />
-        <Body />
-        <Board />
-        <Navigation />
-      </div >
-    </>
-
-    ;
-}
+  ) : (
+      <>
+        <div className={style.root}>
+          <Title />
+          <Header />
+          <Body />
+          <Navigation />
+        </div>
+      </>
+    );
+};
 
 export default class Article extends Component {
   render() {
-    return (
-      <MyComponent />
-    );
+    return <MyComponent />;
   }
 }

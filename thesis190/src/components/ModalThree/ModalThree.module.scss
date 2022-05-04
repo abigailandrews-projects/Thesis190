@@ -3,13 +3,13 @@
 .container {
   display: block;
   position: fixed;
-  left: 25%;
+  left: 35%;
   top: 25%;
   z-index: 9999;
-  width: 50%;
+  width: 500px;
   height: 400px;
   padding: 20px 15px 40px;
-  
+
   border-radius: 5px;
 
   // background-color: $white;
@@ -20,7 +20,7 @@
 }
 
 .box {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
@@ -30,22 +30,19 @@
   padding: 18px 10px 5%;
 }
 
-.header {
-  font-family: "Martel", serif;
-  color: $black;
+.from {
+  font-family: "Helvetica";
+  color: black;
   font-size: 15px;
-  padding: 15px;
+  padding-bottom: 7px;
+  border-bottom: 0.5px solid $black;
+  // padding: 10px 10px 10px;
+  // font-weight: bold;
 }
 
-.text {
-  font-family: 'Special Elite', cursive;
-  color: $black;
-  font-size: 13px;
-  padding: 10px;
-  border-bottom: .25px dotted $black;
-
-  > input {
-    margin-right: 10px;
-  }
+.email {
+  font-family: "Special Elite", cursive;
+  color: black;
+  font-size: 14px;
+  padding-top: 5px;
 }
-

@@ -1,5 +1,5 @@
 // libraries
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // components
 import SectionOne from "../SectionOne/SectionOne.js";
@@ -15,8 +15,12 @@ import Book from "../Book/Book.js";
 import Modal from "../Modal/Modal.js";
 import ModalOne from "../ModalOne/ModalOne.js";
 import ModalTwo from "../ModalTwo/ModalTwo.js";
+import ModalThree from "../ModalThree/ModalThree.js";
+import ModalFour from "../ModalFour/ModalFour.js";
+import ModalSix from "../ModalSix/ModalSix.js";
 import ModalSeven from "../ModalSeven/ModalSeven.js";
 import Wall from "../Wall/Wall.js";
+import Board from "../Board/Board.js";
 
 // scss
 import style from "./Body.module.scss";
@@ -70,10 +74,23 @@ const Body = () => {
     setIsOpenModal9(bool);
   };
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    // console.log("scrollPosition", scrollPosition);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
+
   return (
     <div className={style.root}>
-      <div className={style.shelf}>
-      </div>
+      <div className={style.shelf}></div>
       <div className={style.text}>
         {/* SECTION ONE */}
         <SectionOne />
@@ -82,6 +99,7 @@ const Body = () => {
           isOpenModal={isOpenModal1}
           updateOpenModal={updateOpenModal1}
           passedModal={passedModal1}
+          isValidPosition={scrollPosition}
         />
         {isOpenModal1 && (
           <ModalOne
@@ -99,6 +117,7 @@ const Body = () => {
           isOpenModal={isOpenModal2}
           updateOpenModal={updateOpenModal2}
           passedModal={passedModal2}
+          isValidPosition={scrollPosition}
         />
         {isOpenModal2 && (
           <ModalTwo
@@ -116,9 +135,10 @@ const Body = () => {
           isOpenModal={isOpenModal3}
           updateOpenModal={updateOpenModal3}
           passedModal={passedModal3}
+          isValidPosition={scrollPosition}
         />
         {isOpenModal3 && (
-          <Modal
+          <ModalThree
             passedModal={passedModal3}
             setPassedModal={setPassedModal3}
             updateOpenModal={updateOpenModal3}
@@ -133,9 +153,10 @@ const Body = () => {
           isOpenModal={isOpenModal4}
           updateOpenModal={updateOpenModal4}
           passedModal={passedModal4}
+          isValidPosition={scrollPosition}
         />
         {isOpenModal4 && (
-          <Modal
+          <ModalFour
             passedModal={passedModal4}
             setPassedModal={setPassedModal4}
             updateOpenModal={updateOpenModal4}
@@ -145,12 +166,14 @@ const Body = () => {
 
         {/* SECTION FIVE */}
         <SectionFive />
-        <Book
-          i={5}
-          isOpenModal={isOpenModal5}
-          updateOpenModal={updateOpenModal5}
-          passedModal={passedModal5}
-        />
+        {/* {validScroll(scrollPosition) && (
+          <Book
+            i={5}
+            isOpenModal={isOpenModal5}
+            updateOpenModal={updateOpenModal5}
+            passedModal={passedModal5}
+          />
+        )} */}
         {isOpenModal5 && (
           <Modal
             passedModal={passedModal5}
@@ -167,9 +190,10 @@ const Body = () => {
           isOpenModal={isOpenModal6}
           updateOpenModal={updateOpenModal6}
           passedModal={passedModal6}
+          isValidPosition={scrollPosition}
         />
         {isOpenModal6 && (
-          <Modal
+          <ModalSix
             passedModal={passedModal6}
             setPassedModal={setPassedModal6}
             updateOpenModal={updateOpenModal6}
@@ -184,6 +208,7 @@ const Body = () => {
           isOpenModal={isOpenModal7}
           updateOpenModal={updateOpenModal7}
           passedModal={passedModal7}
+          isValidPosition={scrollPosition}
         />
         {isOpenModal7 && (
           <ModalSeven
@@ -196,12 +221,14 @@ const Body = () => {
 
         {/* SECTION EIGHT */}
         <SectionEight />
-        <Book
-          i={8}
-          isOpenModal={isOpenModal8}
-          updateOpenModal={updateOpenModal8}
-          passedModal={passedModal8}
-        />
+        {/* {validScroll(scrollPosition) && (
+          <Book
+            i={8}
+            isOpenModal={isOpenModal8}
+            updateOpenModal={updateOpenModal8}
+            passedModal={passedModal8}
+          />
+        )} */}
         {isOpenModal8 && (
           <Modal
             passedModal={passedModal8}
@@ -213,12 +240,13 @@ const Body = () => {
 
         {/* SECTION NINE */}
         <SectionNine />
-        <Book
+        {/* <Book
           i={9}
           isOpenModal={isOpenModal9}
           updateOpenModal={updateOpenModal9}
           passedModal={passedModal9}
-        />
+          isValidPosition={scrollPosition}
+        /> */}
         {isOpenModal9 && (
           <Modal
             passedModal={passedModal9}
@@ -226,6 +254,7 @@ const Body = () => {
             updateOpenModal={updateOpenModal9}
           />
         )}
+        <Board />
       </div>
     </div>
   );
