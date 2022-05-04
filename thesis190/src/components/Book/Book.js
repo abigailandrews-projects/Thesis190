@@ -19,7 +19,7 @@ export const Book = (props) => {
   };
 
   const validScroll = (scrollY) => {
-    return scrollY <= 44000 && scrollY >= 1630;
+    return scrollY >= 1630;
   };
 
   return (
@@ -36,7 +36,7 @@ export const Book = (props) => {
                 onClick={handleClick}
                 className={`${style.book} ${
                   !validScroll(props.isValidPosition) && style.opacity
-                }`}
+                  }`}
               >
                 <img src={bookcover} alt="shelf" className={style.bookcover} />
               </div>

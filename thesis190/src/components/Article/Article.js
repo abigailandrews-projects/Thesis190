@@ -4,7 +4,6 @@ import Title from "../Title/Title.js";
 import Body from "../Body/Body.js";
 import Header from "../Header/Header.js";
 import Navigation from "../Navigation/Navigation.js";
-import Board from "../Board/Board.js";
 
 import style from "./Article.module.scss";
 
@@ -33,17 +32,15 @@ const MyComponent = () => {
       </div>
     </div>
   ) : (
-    <>
-      <div className={style.root}>
-        <Title />
-        <Header />
-        <Body />
-        {/* <div className={style.bottompad} /> */}
-        <Board />
-        <Navigation />
-      </div>
-    </>
-  );
+      <>
+        <div className={style.root}>
+          <Title />
+          <Header />
+          <Body />
+          <Navigation />
+        </div>
+      </>
+    );
 };
 
 export default class Article extends Component {
