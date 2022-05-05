@@ -1,9 +1,13 @@
 import React from "react";
 import style from "./SectionFive.module.scss";
+import { Parallax } from "react-scroll-parallax";
 
 const SectionFive = () => (
   <>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       Our investigation was moving slowly. More leads were coming in, each less
       helpful than the last. A new suspect would surface, only for the evidence
       to fall apart under minimal scrutiny. The smoking gun I’d been promised
@@ -13,6 +17,9 @@ const SectionFive = () => (
       Manhattan, somewhere above Central Park.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       I turned to the emails themselves. Textual analysis came naturally to the
       industry’s sleuths, some of whom claimed to detect a Germanic cadence in
       the thief’s writing or an idiomatic French syntax. But each victim had
@@ -21,6 +28,9 @@ const SectionFive = () => (
       that patterns would emerge.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       It was difficult to find anything meaningful. The thief largely emailed on
       weekdays, during New York working hours, but there were exceptions. They
       asked for “favours” and spread “rumours,” but also wished American victims
@@ -33,6 +43,9 @@ const SectionFive = () => (
       in books inscrutable. Their favorite emoticon was ;).
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       With no pattern emerging, we looked to one of the thief’s biggest attacks
       for clues: an attempt in 2019 to steal The Testaments, Margaret Atwood’s
       sequel to The Handmaid’s Tale. Over several months, emails were sent
@@ -44,6 +57,9 @@ const SectionFive = () => (
       like they’ve hired someone else to do it.”
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       The attack presented new wrinkles. The thief began employing a devious
       deception that involved creating a fictional exchange between two people —
       an editor and an agent, say, talking about changes to a manuscript — then
@@ -54,6 +70,9 @@ const SectionFive = () => (
       book’s global unveiling.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       Atwood’s representatives assumed that piracy was the goal. Her foreign
       publishing rights were spoken for, and Hulu was airing The Handmaid’s
       Tale, meaning the streamer was likely first in line for the film-and-TV
@@ -64,6 +83,9 @@ const SectionFive = () => (
       industry’s other disruptor: Amazon accidentally shipped 800 copies early.)
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       Some in publishing were beginning to question whether manuscripts were
       even the end goal. How else to explain why the thief would want sample
       pages of Bong Joon Ho’s Parasite storyboards and a ten-page book proposal
@@ -82,6 +104,9 @@ const SectionFive = () => (
     </div>
     {/* TODO QUOTE */}
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       If the thief were really multiple thieves working from a dark warren
       somewhere, how did they know so much about book publishing? In early 2020,
       an explanation presented itself. Virginia Ascione, an Italian editor, sent
@@ -97,6 +122,9 @@ const SectionFive = () => (
       thief wrote. “How sinister!!”
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       The thief, it seemed, was somehow reading Trenchard’s emails. (Trenchard
       has changed her password and hasn’t had any such incidents of late.)
       Several people told me about similar experiences with other publishing
@@ -105,6 +133,9 @@ const SectionFive = () => (
       inside people’s inboxes all along.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       This suggested an operator that textual analysis wasn’t going to unmask.
       We had no choice: Bring in the hackers. We consulted several cybersecurity
       experts, who found that the thief had upgraded their security starting in
@@ -120,6 +151,9 @@ const SectionFive = () => (
       payment fraud — the thief seemed to be using stolen credit cards.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       Others decided it was time to bring in the big guns. Last summer, several
       people approached the FBI, sharing the thief’s emails with the bureau. But
       if this were a crime of which the primary consequence was annoyance, it
