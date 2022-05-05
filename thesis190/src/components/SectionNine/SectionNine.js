@@ -1,9 +1,13 @@
 import React from "react";
 import style from "./SectionNine.module.scss";
+import { Parallax } from "react-scroll-parallax";
 
 const SectionNine = () => (
   <>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       This felt like the final chapter. The suspect’s manner had been strange,
       but he had also presented more evidence in his defense than anyone had
       mustered in his prosecution. I felt less like Lisbeth Salander than one of
@@ -11,6 +15,9 @@ const SectionNine = () => (
       right. This was pointless.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       Or … was the pointlessness the point? The one thing that seemed to tie all
       these tiny acts of deception together was a sense that the thief was in it
       for the pleasure of the act itself. Whoever they were — a disgruntled
@@ -28,12 +35,18 @@ const SectionNine = () => (
     </div>
 
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       Last week, in one final attempt at cracking the case, Lila and I sent an
       email to 89 different addresses the thief has used. Did they care to
       comment?
     </div>
 
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       The thief hasn’t written back. But just a few minutes after the message
       went out, I got an unusual text from someone hoping to talk off the record
       — a person in publishing equally obsessed with solving the case. “It’s
@@ -42,6 +55,9 @@ const SectionNine = () => (
     </div>
 
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       I wasn’t kidding. I had walked so deep into the dark labyrinth of this
       mystery that rounding every bend seemed to reveal another uncertainty.
       Just last month, the thief expanded their scheme yet again: For the first
@@ -49,6 +65,9 @@ const SectionNine = () => (
       book person.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       And now, here was this source, beckoning me to join them even deeper in
       the maze. They were calling to tell me a story they hadn’t told anyone
       else. For two years, they had harbored a suspicion about a widely

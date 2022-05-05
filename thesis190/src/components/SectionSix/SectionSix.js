@@ -1,9 +1,13 @@
 import React from "react";
 import style from "./SectionSix.module.scss";
+import { Parallax } from "react-scroll-parallax";
 
 const SectionSix = () => (
   <>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       The pandemic disrupted the book business just like everything else. The
       only constant was email, and the thief took advantage. After learning that
       a British agent had contracted the virus, the thief emailed the agent’s
@@ -19,14 +23,21 @@ const SectionSix = () => (
     </div>
     <div className={style.container}>
       <div className={style.email}>
-        “I hope the situation is getting better in Norway!”<br /><br />
-        “Are you in Italy now? I heard things are now opening up there which is great!!”<br /><br />
+        “I hope the situation is getting better in Norway!”
+        <br />
+        <br />
+        “Are you in Italy now? I heard things are now opening up there which is
+        great!!”
+        <br />
+        <br />
         “How’s working from home for you? For me it’s getting a bit stressful …”
-    </div>
-
+      </div>
     </div>
 
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       For most of the pandemic, the thief’s scheme looked like a game, a way to
       pass the time. During the height of lockdown restrictions in London, the
       thief impersonated a U.K. scout to ask for Kevin Kwan’s forthcoming sequel
@@ -35,6 +46,9 @@ const SectionSix = () => (
     </div>
 
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       I was getting bored, too, and had to admit the investigation had become a
       welcome distraction from the state of the world. Every day brought a new
       domain to investigate, and I now had my own version of the Homeland wall:
@@ -44,6 +58,9 @@ const SectionSix = () => (
     </div>
 
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       I did find one unusual sequence of events. During the third week of last
       August, the thief seemed to snap. It was six months into the pandemic, and
       for the first time I could see, they were angry. On multiple occasions
@@ -55,6 +72,9 @@ const SectionSix = () => (
     </div>
 
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       The most menacing message came on August 17. Linda Altrov Berg, who had
       dealt with the “Millennium” attack back in 2017, received an email
       impersonating an editor in Spain, asking for a book that Altrov Berg
@@ -64,11 +84,17 @@ const SectionSix = () => (
     </div>
 
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       In the past, the thief had retreated from confrontations, skulking back
       into the digital shadows once the jig was up. This time, however, they
       shot back a reply: “Hoppas att du dör av coronaviruset.”
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       In English, the message translated to: “Hope you die of the coronavirus.”
     </div>
   </>

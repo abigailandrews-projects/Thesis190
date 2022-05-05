@@ -1,9 +1,13 @@
 import React from "react";
 import style from "./SectionEight.module.scss";
+import { Parallax } from "react-scroll-parallax";
 
 const SectionEight = () => (
   <>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       The thief wasn’t the only one who wanted me to stop. Two of this
       magazine’s editors sat me down and said that I couldn’t spend all year
       investigating a crime with no real victims. The world was sick and on fire
@@ -11,6 +15,9 @@ const SectionEight = () => (
       time to write the ending.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       In the course of reporting this story, more than a dozen people in
       publishing told us they believed a single suspect was behind the whole
       thing: the person I’d been told about at the outset. Most people couldn’t
@@ -24,6 +31,9 @@ const SectionEight = () => (
       to me, “Do we all just think it’s him because he’s weird?”
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       The smoking gun — the mistaken domain registration teased by my friend —
       was meant to provide more substantial proof. After a seemingly endless
       game of tag, we finally got to the source. In the summer of 2017, Laila
@@ -35,12 +45,18 @@ const SectionEight = () => (
       to belong to a scout — our original suspect.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       But upon closer inspection, I found the proof was a mirage. The address
       wasn’t the suspect’s. It was yet another fake email, missing a single
       letter, the same one the thief had used to impersonate the suspect himself
       all the way back in 2016.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       Lila and I scrambled for an explanation. Wasn’t it suspicious, at least,
       that the thief had used this particular address? Maybe our suspect was
       being framed? What a twist! But when I showed the evidence to Chad
@@ -50,6 +66,9 @@ const SectionEight = () => (
       people and companies in publishing. Our smoking gun had misfired.
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       I had come too far not to close the loop. In early August, I spoke to the
       suspect on Zoom. He was sitting in the garden of his home wearing a blue
       polo shirt with the sun setting behind him, causing the screen to flare
@@ -63,6 +82,9 @@ const SectionEight = () => (
       and a big lawsuit. In other words, all you deserve.”
     </div>
     <div className={style.container}>
+      <Parallax speed={2}>
+        <div className={style.dot}></div>
+      </Parallax>
       The suspect said he had a simple explanation for why people thought there
       was something odd about him. He was, by his own admission, kind of an odd
       guy. He was shy and had never fully assimilated into the New York scene he
