@@ -17,8 +17,11 @@ import ModalOne from "../ModalOne/ModalOne.js";
 import ModalTwo from "../ModalTwo/ModalTwo.js";
 import ModalThree from "../ModalThree/ModalThree.js";
 import ModalFour from "../ModalFour/ModalFour.js";
+import ModalFive from "../ModalFive/ModalFive.js";
 import ModalSix from "../ModalSix/ModalSix.js";
 import ModalSeven from "../ModalSeven/ModalSeven.js";
+import ModalEight from "../ModalEight/ModalEight.js";
+import ModalNine from "../ModalNine/ModalNine.js";
 import Wall from "../Wall/Wall.js";
 import Board from "../Board/Board.js";
 
@@ -166,16 +169,15 @@ const Body = () => {
 
         {/* SECTION FIVE */}
         <SectionFive />
-        {/* {validScroll(scrollPosition) && (
-          <Book
-            i={5}
-            isOpenModal={isOpenModal5}
-            updateOpenModal={updateOpenModal5}
-            passedModal={passedModal5}
-          />
-        )} */}
+        <Book
+          i={5}
+          isOpenModal={isOpenModal5}
+          updateOpenModal={updateOpenModal5}
+          passedModal={passedModal5}
+          isValidPosition={scrollPosition}
+        />
         {isOpenModal5 && (
-          <Modal
+          <ModalFive
             passedModal={passedModal5}
             setPassedModal={setPassedModal5}
             updateOpenModal={updateOpenModal5}
@@ -221,16 +223,15 @@ const Body = () => {
 
         {/* SECTION EIGHT */}
         <SectionEight />
-        {/* {validScroll(scrollPosition) && (
-          <Book
-            i={8}
-            isOpenModal={isOpenModal8}
-            updateOpenModal={updateOpenModal8}
-            passedModal={passedModal8}
-          />
-        )} */}
+        <Book
+          i={8}
+          isOpenModal={isOpenModal8}
+          updateOpenModal={updateOpenModal8}
+          passedModal={passedModal8}
+          isValidPosition={scrollPosition}
+        />
         {isOpenModal8 && (
-          <Modal
+          <ModalEight
             passedModal={passedModal8}
             setPassedModal={setPassedModal8}
             updateOpenModal={updateOpenModal8}
@@ -240,15 +241,15 @@ const Body = () => {
 
         {/* SECTION NINE */}
         <SectionNine />
-        {/* <Book
+        <Book
           i={9}
           isOpenModal={isOpenModal9}
           updateOpenModal={updateOpenModal9}
           passedModal={passedModal9}
           isValidPosition={scrollPosition}
-        /> */}
+        />
         {isOpenModal9 && (
-          <Modal
+          <ModalNine
             passedModal={passedModal9}
             setPassedModal={setPassedModal9}
             updateOpenModal={updateOpenModal9}
